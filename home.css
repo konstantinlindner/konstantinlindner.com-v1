@@ -1,37 +1,39 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 
 body {
-  font-family: "Open Sans", normal;
+  font-family: "Roboto";
   text-align: left;
-  font-size: 16px;
-  line-height: 1.5;
+  background-color: #f9fafb;
 }
 
-h1 {
-  font-weight: bold;
-  font-size: 36px;
-  margin-bottom: 0.5em;
-}
-
-h2 {
-  font-weight: bold;
-  font-size: 30px;
-  margin-bottom: 0.5em;
-}
-
-h3 {
-  font-weight: bold;
-  font-size: 24px;
-  margin-bottom: 0.5em;
+.content-box {
+  width: 600px;
+  display: block;
+  margin: auto;
 }
 
 p {
-  margin: 0 0 1em 0;
+  font-size: 13px;
 }
 
-ul {
+.job-title {
+  margin-top: 0px;
+}
+
+.about-text {
+  margin-top: 20px;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 37px;
+  margin-bottom: 0px;
+  margin-top: 40px;
+}
+
+.menu-list {
   list-style-type: none;
-  margin: 0;
+  margin: auto;
   padding: 0;
 }
 
@@ -39,7 +41,12 @@ li {
   display: inline-block;
 }
 
-a {
+.menu {
+  margin-top: 100;
+  font-size: 14px;
+}
+
+.menu-item {
   display: block;
   padding: 4px 8px;
   text-decoration: none;
@@ -47,6 +54,43 @@ a {
   border-radius: 5px;
 }
 
-a:hover {
+.menu-item:hover {
   background-color: #eaeaea;
+}
+
+.work-link {
+  color: #000;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.work-link:hover {
+  text-decoration: underline;
+}
+
+.about-text {
+  width: 400px;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  float: right;
+  margin-top: 50px;
+}
+
+.social-media-icons {
+  padding-top: 10px;
+}
+
+.social-media-icon-left {
+  padding-right: 5px;
+}
+
+.social-media-icon-middle {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.social-media-icon-right {
+  padding-left: 5px;
 }
