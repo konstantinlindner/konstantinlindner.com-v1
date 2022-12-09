@@ -2,25 +2,26 @@
 <html>
   <head>
     <title>Konstantin Lindner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="/icons/favicon-32x32.png"
+      href="/favicon/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="/icons/favicon-16x16.png"
+      href="/favicon/favicon-16x16.png"
     />
     <link rel="shortcut icon" href="/favicon.ico" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="/icons/apple-touch-icon.png"
+      href="/favicon/apple-touch-icon.png"
     />
-    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <iv>
     <div class="content-box">
@@ -34,6 +35,8 @@
           <li><a class="menu-item" href="/about">About</a></li>
         </ul>
       </div>
+      <img src="/img/other-icons/menu.png" alt="Hamburger Menu" width="20" height="20" id="hamburger-button">
+      <img src="/img/other-icons/close.png" alt="Close button" width="20" height="20" id="close-button">
       <img src="/img/profile.webp" alt="Profile picture" width="150" height="150" class="profile-picture">
       <h1 class="name">Konstantin Lindner</h1>
       <p class="job-title">
@@ -47,13 +50,14 @@
       </br></br>
       Currently working on the development team for fit52, a fitness app from Carrie Underwood.
       </p>
-      <div class="social-media-icons">
-        <a href="https://www.linkedin.com/in/konstantinlindner/" target="'_blank"><img src="/img/social-media-icons/linkedin.png" alt="LinkedIn" width="25" height="25" class="social-media-icon-left"></a>
-        <a href="https://github.com/konstantinlindner" target="'_blank"><img src="/img/social-media-icons/github.png" alt="GitHub" width="25" height="25" class="social-media-icon-middle"></a>
-        <a href="https://www.instagram.com/kontedisc/" target="'_blank"><img src="/img/social-media-icons/instagram.png" alt="Instagram" width="25" height="25" class="social-media-icon-middle"></a>
-        <a href="https://twitter.com/kontedisc" target="'_blank"><img src="/img/social-media-icons/twitter.png" alt="Twitter" width="25" height="25" class="social-media-icon-middle"></a>
-        <a href="https://open.spotify.com/user/el9iz0421ohco9v4ps97j2l8e?si=tbfl8hbFRyaycr4iPfxOsw" target="'_blank"><img src="/img/social-media-icons/spotify.png" alt="Spotify" width="25" height="25" class="social-media-icon-right"></a>
+      <div class="social-media-icons-box">
+        <a href="https://www.linkedin.com/in/konstantinlindner/" target="'_blank"><img src="/img/social-media-icons/linkedin.png" alt="LinkedIn" id="social-media-icon-1"></a>
+        <a href="https://github.com/konstantinlindner" target="'_blank"><img src="/img/social-media-icons/github.png" alt="GitHub" id="social-media-icon-2"></a>
+        <a href="https://www.instagram.com/kontedisc/" target="'_blank"><img src="/img/social-media-icons/instagram.png" alt="Instagram" id="social-media-icon-3"></a>
+        <a href="https://twitter.com/kontedisc" target="'_blank"><img src="/img/social-media-icons/twitter.png" alt="Twitter" id="social-media-icon-4"></a>
+        <a href="https://open.spotify.com/user/el9iz0421ohco9v4ps97j2l8e?si=tbfl8hbFRyaycr4iPfxOsw" target="'_blank"><img src="/img/social-media-icons/spotify.png" alt="Spotify" id="social-media-icon-5"></a>
     </div>    
   </div>
+  <script src="script.js"></script>
   </body>
 </html>
