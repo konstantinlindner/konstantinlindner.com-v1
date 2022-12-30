@@ -16,16 +16,5 @@ closeButton.addEventListener("click", function () {
   }
 });
 
-fetch("https://ipapi.co/json/")
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (data) {
-    if (data.country_name === "Sweden") {
-      let link = document.getElementById("phone-number");
-      link.href = "tel:+46 76-078 60 70";
-    } else {
-      let link = document.getElementById("phone-number");
-      link.href = "tel:+1 (778) 930-1924";
-    }
-  });
+let currentYear = new Date().getFullYear();
+document.getElementById("year").innerHTML = currentYear;

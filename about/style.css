@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+body {
+  font-family: "Roboto";
+  text-align: left;
+  background-color: #f9fafb;
+}
+
+.content-box {
+  max-width: 600px;
+  display: block;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: auto;
+}
+
+@media (max-width: 650px) {
+  .content-box {
+    max-width: 400px;
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: auto;
+  }
+}
+
+p {
+  font-size: 14px;
+}
+
+.header {
+  font-weight: 700;
+  font-size: 22px;
+  margin-top: 40px;
+}
+
+@media (max-width: 650px) {
+  .header {
+    font-weight: 700;
+    font-size: 22px;
+    margin-top: 20px;
+  }
+}
+
+.menu-list {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+}
+
+.menu-list-item {
+  display: inline-block;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.menu {
+  margin-top: 100;
+  font-size: 14px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (max-width: 650px) {
+  .menu {
+    display: none;
+  }
+}
+
+#hamburger-button {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  #hamburger-button {
+    display: block;
+  }
+}
+
+#hamburger-button:hover {
+  cursor: pointer;
+}
+
+#close-button {
+  display: none;
+}
+
+#close-button:hover {
+  cursor: pointer;
+}
+
+.menu-item {
+  display: block;
+  padding: 4px 8px;
+  text-decoration: none;
+  color: #000;
+  border-radius: 5px;
+}
+
+.menu-item:hover {
+  background-color: #eaeaea;
+}
+
+.about-picture {
+  border-radius: 50%;
+  float: right;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+@media (max-width: 650px) {
+  .about-picture {
+    border-radius: 50%;
+    float: none;
+    margin-top: 20px;
+  }
+}
+
+.company-name {
+  font-weight: bold;
+  margin-bottom: 0;
+  display: inline-block;
+  width: 120px;
+}
+
+.company-name-link {
+  color: #000;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.company-name-link:hover {
+  text-decoration: underline;
+}
+
+.job-title {
+  margin-bottom: 0;
+  display: inline-block;
+  font-style: italic;
+}
+
+.dates {
+  font-size: 12px;
+  margin-top: 2px;
+  color: #666666;
+}
+
+.language-1 {
+  display: inline-block;
+  margin-bottom: 5px;
+  width: 180px;
+}
+
+.language-2 {
+  display: inline-block;
+  margin-top: 5px;
+  width: 180px;
+}
+
+footer {
+  margin-top: 50px;
+}
+
+.social-media-icons-box {
+  padding-top: 10px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.social-media-icon-first {
+  width: 25px;
+  height: 25px;
+  padding-right: 5px;
+}
+
+.social-media-icon-middle {
+  width: 25px;
+  height: 25px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.social-media-icon-last {
+  width: 25px;
+  height: 25px;
+  padding-left: 5px;
+}

@@ -25,29 +25,19 @@ body {
 }
 
 p {
-  font-size: 13px;
+  font-size: 14px;
 }
 
-.job-title {
-  margin-top: 0px;
-}
-
-.about-text {
-  margin-top: 20px;
-}
-
-.name {
+.header {
   font-weight: 700;
-  font-size: 37px;
-  margin-bottom: 0px;
+  font-size: 22px;
   margin-top: 40px;
 }
 
 @media (max-width: 650px) {
-  .name {
+  .header {
     font-weight: 700;
-    font-size: 37px;
-    margin-bottom: 0px;
+    font-size: 22px;
     margin-top: 20px;
   }
 }
@@ -119,79 +109,71 @@ p {
   background-color: #eaeaea;
 }
 
-.work-link {
-  color: #000;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.work-link:hover {
-  text-decoration: underline;
-}
-
-.about-text {
-  width: 400px;
-}
-
-@media (max-width: 650px) {
-  .about-text {
-    width: fit-content;
-  }
-}
-
-.profile-picture {
+.about-picture {
   border-radius: 50%;
   float: right;
   margin-top: 50px;
+  margin-bottom: 10px;
+  margin-left: 10px;
 }
 
 @media (max-width: 650px) {
-  .profile-picture {
+  .about-picture {
     border-radius: 50%;
     float: none;
     margin-top: 20px;
   }
 }
 
-.social-media-icons-box {
-  padding-top: 10px;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+.company-name {
+  font-weight: bold;
+  margin-bottom: 0;
+  display: inline-block;
+  width: 120px;
 }
 
-#social-media-icon-1 {
-  width: 25px;
-  height: 25px;
-  padding-right: 5px;
+.company-name-link {
+  color: #000;
+  font-weight: 700;
+  text-decoration: none;
 }
 
-#social-media-icon-2 {
-  width: 25px;
-  height: 25px;
-  padding-right: 5px;
-  padding-left: 5px;
+.company-name-link:hover {
+  text-decoration: underline;
 }
 
-#social-media-icon-3 {
-  width: 25px;
-  height: 25px;
-  padding-right: 5px;
-  padding-left: 5px;
+.job-title {
+  margin-bottom: 0;
+  display: inline-block;
+  font-style: italic;
 }
 
-#social-media-icon-4 {
-  width: 25px;
-  height: 25px;
-  padding-right: 5px;
-  padding-left: 5px;
+.dates {
+  font-size: 12px;
+  margin-top: 2px;
+  color: #666666;
 }
 
-#social-media-icon-5 {
-  width: 25px;
-  height: 25px;
-  padding-left: 5px;
+.language-1 {
+  display: inline-block;
+  margin-bottom: 5px;
+  width: 180px;
+}
+
+.language-2 {
+  display: inline-block;
+  margin-top: 5px;
+  width: 180px;
+}
+
+footer {
+  margin-top: 50px;
+}
+
+.footer-text {
+  display: inline-block;
+}
+
+#year {
+  display: inline-block;
 }
