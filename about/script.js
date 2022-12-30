@@ -16,16 +16,36 @@ closeButton.addEventListener("click", function () {
   }
 });
 
-fetch("https://ipapi.co/json/")
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (data) {
-    if (data.country_name === "Sweden") {
-      let link = document.getElementById("phone-number");
-      link.href = "tel:+46 76-078 60 70";
-    } else {
-      let link = document.getElementById("phone-number");
-      link.href = "tel:+1 (778) 930-1924";
-    }
-  });
+let link = document.getElementById("phone-number");
+
+if (!getCookie("dataFetched")) {
+  fetch("https://ipapi.co/json/")
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      if (data.country_name === "Sweden") {
+        link.href = "tel:+46 76-078 60 70";
+        setCookie("dataFetched", true, 30);
+      } else {
+        link.href = "tel:+1 (778) 930-1924";
+        setCookie("dataFetched", true, 30);
+      }
+    });
+}
+
+function getCookie(name) {
+  let value = "; " + document.cookie;
+  let parts = value.split("; " + name + "=");
+  if (parts.length == 2) return parts.pop().split(";").shift();
+}
+
+function setCookie(name, value, days) {
+  var expires = "";
+  if (days) {
+    let date = new Date();
+    date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+    expires = "; expires=" + date.toUTCString();
+  }
+  document.cookie = name + "=" + value + expires + "; path=/";
+}
