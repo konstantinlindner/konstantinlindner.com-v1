@@ -9,43 +9,38 @@ body {
 .content-box {
   max-width: 600px;
   display: block;
-  padding-left: 20px;
-  padding-right: 20px;
   margin: auto;
 }
 
 @media (max-width: 650px) {
   .content-box {
-    max-width: 400px;
+    max-width: calc(100vw - 50px);
     display: block;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: auto;
   }
 }
 
-p {
+.menu {
+  margin-top: 20px;
   font-size: 14px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-.header {
-  font-weight: 700;
-  font-size: 22px;
-  margin-top: 40px;
-}
-
-@media (max-width: 650px) {
-  .header {
-    font-weight: 700;
-    font-size: 22px;
-    margin-top: 20px;
+@media (max-width: 550px) {
+  .menu {
+    display: none;
   }
 }
 
 .menu-list {
   list-style-type: none;
-  margin: auto;
+  margin-left: -8px;
   padding: 0;
+  margin-bottom: 40px;
 }
 
 .menu-list-item {
@@ -58,28 +53,23 @@ p {
   user-select: none;
 }
 
-.menu {
-  margin-top: 100;
-  font-size: 14px;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+.menu-item {
+  display: block;
+  padding: 4px 8px;
+  text-decoration: none;
+  color: #000;
+  border-radius: 5px;
 }
 
-@media (max-width: 650px) {
-  .menu {
-    display: none;
-  }
+.menu-item:hover {
+  background-color: #eaeaea;
 }
 
 #hamburger-button {
   display: none;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 550px) {
   #hamburger-button {
     display: block;
   }
@@ -97,7 +87,41 @@ p {
   cursor: pointer;
 }
 
-.menu-item {
+.mobile-menu-list {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.mobile-menu-list-item {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#mobile-menu {
+  display: none;
+  margin-top: 100;
+  font-size: 14px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (max-width: 650px) {
+  #mobile-menu {
+    display: none;
+  }
+}
+
+.mobile-menu-item {
   display: block;
   padding: 4px 8px;
   text-decoration: none;
@@ -105,24 +129,64 @@ p {
   border-radius: 5px;
 }
 
-.menu-item:hover {
+.mobile-menu-item:hover {
   background-color: #eaeaea;
+}
+
+#first-header {
+  margin-top: 10px;
+}
+
+.header {
+  font-weight: 700;
+  font-size: 22px;
+  margin-top: 20px;
 }
 
 .about-picture {
   border-radius: 50%;
   float: right;
-  margin-top: 50px;
-  margin-bottom: 10px;
-  margin-left: 10px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 20px;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 550px) {
   .about-picture {
     border-radius: 50%;
     float: none;
     margin-top: 20px;
   }
+}
+
+.social-media-icons-box {
+  padding-top: 10px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.social-media-icon-first {
+  width: 25px;
+  height: 25px;
+  padding-right: 5px;
+}
+
+.social-media-icon-middle {
+  width: 25px;
+  height: 25px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.social-media-icon-last {
+  width: 25px;
+  height: 25px;
+  padding-left: 5px;
 }
 
 .company-name {
@@ -134,7 +198,6 @@ p {
 
 .company-name-link {
   color: #000;
-  font-weight: 700;
   text-decoration: none;
 }
 
@@ -167,34 +230,5 @@ p {
 }
 
 footer {
-  margin-top: 50px;
-}
-
-.social-media-icons-box {
-  padding-top: 10px;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.social-media-icon-first {
-  width: 25px;
-  height: 25px;
-  padding-right: 5px;
-}
-
-.social-media-icon-middle {
-  width: 25px;
-  height: 25px;
-  padding-right: 5px;
-  padding-left: 5px;
-}
-
-.social-media-icon-last {
-  width: 25px;
-  height: 25px;
-  padding-left: 5px;
+  height: 20px;
 }
