@@ -25,7 +25,7 @@ if (!getCookie("dataFetched")) {
     })
     .then(function (data) {
       if (data.country_name === "Sweden") {
-        link.href = "tel:+46 76-078 60 70";
+        link.href = "tel:+46 76-007 86 70";
         setCookie("dataFetched", true, 30);
       } else {
         link.href = "tel:+1 (778) 930-1924";

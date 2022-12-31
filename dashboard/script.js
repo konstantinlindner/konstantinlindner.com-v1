@@ -15,26 +15,3 @@ closeButton.addEventListener("click", function () {
     document.getElementById("close-button").style.display = "none";
   }
 });
-
-let currentYear = new Date().getFullYear();
-document.getElementById("year").innerHTML = currentYear;
-
-document
-  .querySelector("#gothenburg-box")
-  .addEventListener("click", function () {
-    window.location.href = "gothenburg";
-  });
-
-document.querySelector("#vancouver-box").addEventListener("click", function () {
-  window.location.href = "vancouver";
-});
-
-document
-  .querySelector("#silver-star-box")
-  .addEventListener("click", function () {
-    window.location.href = "silver-star";
-  });
-
-document.querySelector("#trips-box").addEventListener("click", function () {
-  window.location.href = "trips";
-});

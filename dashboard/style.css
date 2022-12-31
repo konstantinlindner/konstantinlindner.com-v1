@@ -24,12 +24,11 @@ body {
   }
 }
 
-#intro-text {
+p {
   font-size: 14px;
-  margin-bottom: 40px;
 }
 
-#intro-header {
+.header {
   font-weight: 700;
   font-size: 22px;
   margin-top: 40px;
@@ -108,62 +107,4 @@ body {
 
 .menu-item:hover {
   background-color: #eaeaea;
-}
-
-.box-photo {
-  width: 300px;
-  border-radius: 5px;
-}
-
-.box-text {
-}
-
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-@media (max-width: 650px) {
-  .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-}
-
-.gallery-box {
-  margin-right: 15px;
-  margin-bottom: 15px;
-  transition: transform 0.5s;
-}
-
-.gallery-box:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-}
-
-footer {
-  position: relative;
-  margin-top: 60px;
-  bottom: 20px;
-  max-height: calc(100vh - 20px);
-}
-
-.footer-text {
-  display: inline-block;
-}
-
-#year {
-  display: inline-block;
 }
