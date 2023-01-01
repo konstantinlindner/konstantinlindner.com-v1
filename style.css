@@ -67,11 +67,13 @@ body {
 
 #hamburger-button {
   display: none;
+  margin-top: 20px;
 }
 
 @media (max-width: 550px) {
   #hamburger-button {
     display: block;
+    margin-top: 20px;
   }
 }
 
@@ -81,6 +83,7 @@ body {
 
 #close-button {
   display: none;
+  margin-top: 20px;
 }
 
 #close-button:hover {

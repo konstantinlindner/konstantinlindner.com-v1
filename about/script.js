@@ -18,22 +18,38 @@ closeButton.addEventListener("click", function () {
   }
 });
 
-let link = document.getElementById("phone-number");
+const swedishNumber = [
+  "Sweden",
+  "Denmark",
+  "Norway",
+  "Germany",
+  "Netherlands",
+  "Spain",
+  "Switzerland",
+];
 
-if (!getCookie("dataFetched")) {
+const canadianNumber = ["Canada", "United States"];
+
+let phoneLink = document.getElementById("phone-number");
+
+if (!getCookie("phoneNumber")) {
   fetch("https://ipapi.co/json/")
     .then(function (response) {
       return response.json();
     })
     .then(function (data) {
-      if (data.country_name === "Sweden") {
-        link.href = "tel:+46 76-007 86 70";
-        setCookie("dataFetched", true, 30);
+      if (swedishNumber.includes(data.country_name)) {
+        setCookie("phoneNumber", "tel:+46 76-007 86 70", 30);
+        phoneLink.href = getCookie("phoneNumber");
+      } else if (canadianNumber.includes(data.country_name)) {
+        setCookie("phoneNumber", "tel:+1 (778) 930-1924", 30);
+        phoneLink.href = getCookie("phoneNumber");
       } else {
-        link.href = "tel:+1 (778) 930-1924";
-        setCookie("dataFetched", true, 30);
+        setCookie("phoneNumber", "tel:null", 30);
       }
     });
+} else {
+  phoneLink.href = getCookie("phoneNumber");
 }
 
 function getCookie(name) {
@@ -43,7 +59,7 @@ function getCookie(name) {
 }
 
 function setCookie(name, value, days) {
-  var expires = "";
+  let expires = "";
   if (days) {
     let date = new Date();
     date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
