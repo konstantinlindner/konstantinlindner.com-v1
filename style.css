@@ -152,6 +152,15 @@ body {
   }
 }
 
+@media (max-width: 550px) {
+  .name {
+    font-weight: bold;
+    font-size: 34px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+}
+
 .profile-picture {
   border-radius: 50%;
   float: right;
