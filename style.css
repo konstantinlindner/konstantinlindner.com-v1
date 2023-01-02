@@ -121,27 +121,9 @@ hr {
 
 .name {
   font-weight: bold;
-  font-size: 37px;
+  font-size: 34px;
   margin-bottom: 0px;
   margin-top: 10px;
-}
-
-@media (max-width: 650px) {
-  .name {
-    font-weight: bold;
-    font-size: 37px;
-    margin-bottom: 0px;
-    margin-top: 10px;
-  }
-}
-
-@media (max-width: 550px) {
-  .name {
-    font-weight: bold;
-    font-size: 34px;
-    margin-bottom: 0px;
-    margin-top: 10px;
-  }
 }
 
 .profile-picture {
@@ -149,8 +131,7 @@ hr {
   float: right;
   margin-top: 0px;
   margin-bottom: 5px;
-  margin-left: 5px;
-  margin-right: 20px;
+  margin-left: 10px;
 }
 
 @media (max-width: 550px) {
