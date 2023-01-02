@@ -65,6 +65,7 @@ body {
 }
 
 #hamburger-button {
+  -webkit-touch-callout: none;
   display: none;
   margin-top: 20px;
 }
@@ -72,7 +73,6 @@ body {
 @media (max-width: 550px) {
   #hamburger-button {
     display: block;
-    margin-top: 20px;
   }
 }
 
@@ -81,6 +81,7 @@ body {
 }
 
 #close-button {
+  -webkit-touch-callout: none;
   display: none;
   margin-top: 20px;
 }
