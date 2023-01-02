@@ -197,6 +197,12 @@ footer {
   display: inline-block;
 }
 
+@media (max-width: 650px) {
+  .footer-text {
+    font-size: 12px;
+  }
+}
+
 #year {
   display: inline-block;
 }
