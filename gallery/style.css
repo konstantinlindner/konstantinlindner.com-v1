@@ -103,7 +103,7 @@ body {
   user-select: none;
 }
 
-hr {
+.mobile-menu-line {
   border: 0.5px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -115,9 +115,6 @@ hr {
   border-radius: 5px;
 }
 
-.mobile-menu-item:hover {
-  background-color: #eaeaea;
-}
 #intro-header {
   font-weight: 700;
   font-size: 22px;
