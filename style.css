@@ -22,7 +22,7 @@ body {
 .menu {
   margin-top: 20px;
   font-size: 14px;
-  /* -webkit-touch-callout: none; */
+  -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
@@ -45,7 +45,6 @@ body {
 
 .menu-list-item {
   display: inline-block;
-  /* -webkit-touch-callout: none; */
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
@@ -95,7 +94,6 @@ body {
   margin-top: 15px;
   font-size: 16px;
   display: none;
-  /* -webkit-touch-callout: none; */
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
@@ -158,7 +156,6 @@ body {
 
 .social-media-icons-box {
   margin-top: 20px;
-  /* -webkit-touch-callout: none; */
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
