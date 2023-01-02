@@ -193,7 +193,14 @@ footer {
   max-height: calc(100vh - 20px);
 }
 
+@media (max-width: 650px) {
+  footer {
+    text-align: center;
+  }
+}
+
 .footer-text {
+  font-size: 14px;
   display: inline-block;
 }
 
