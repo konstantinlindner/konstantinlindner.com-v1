@@ -15,7 +15,6 @@ body {
 @media (max-width: 650px) {
   .content-box {
     max-width: calc(100vw - 50px);
-    display: block;
   }
 }
 
@@ -45,7 +44,6 @@ body {
 
 .menu-list-item {
   display: inline-block;
-  -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
@@ -68,12 +66,17 @@ body {
 #hamburger-button {
   display: none;
   margin-top: 20px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 @media (max-width: 550px) {
   #hamburger-button {
     display: block;
-    margin-top: 20px;
   }
 }
 
@@ -84,6 +87,12 @@ body {
 #close-button {
   display: none;
   margin-top: 20px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 #close-button:hover {
@@ -95,7 +104,6 @@ body {
   margin-top: 15px;
   font-size: 16px;
   display: none;
-  -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;

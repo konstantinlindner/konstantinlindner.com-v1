@@ -15,7 +15,6 @@ body {
 @media (max-width: 650px) {
   .content-box {
     max-width: calc(100vw - 50px);
-    display: block;
   }
 }
 
@@ -141,7 +140,6 @@ body {
 
 @media (max-width: 550px) {
   .profile-picture {
-    border-radius: 50%;
     float: none;
     margin-top: 20px;
   }
