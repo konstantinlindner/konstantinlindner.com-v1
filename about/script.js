@@ -1,5 +1,4 @@
 const hamburgerButton = document.querySelector("#hamburger-button");
-
 const closeButton = document.querySelector("#close-button");
 
 hamburgerButton.addEventListener("click", function () {
@@ -27,7 +26,6 @@ const swedishNumber = [
   "Spain",
   "Switzerland",
 ];
-
 const canadianNumber = ["Canada", "United States"];
 
 let phoneLink = document.getElementById("phone-number");

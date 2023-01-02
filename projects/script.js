@@ -1,5 +1,4 @@
 const hamburgerButton = document.querySelector("#hamburger-button");
-
 const closeButton = document.querySelector("#close-button");
 
 hamburgerButton.addEventListener("click", function () {
