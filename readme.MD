@@ -1,6 +1,6 @@
 ### konstantinlindner.com
 
-This is the repository for my personal website.
+This is the repository for the first iteration of my personal website.
 
 UI Icons: https://www.flaticon.com/packs/user-interface-2561
 </br>
