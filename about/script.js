@@ -17,6 +17,11 @@ closeButton.addEventListener("click", function () {
   }
 });
 
+
+
+
+
+
 const swedishNumber = [
   "Sweden",
   "Denmark",
